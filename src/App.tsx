@@ -6,8 +6,8 @@ import Cart from './Cart/Cart';
 import Drawer from '@material-ui/core/Drawer';
 import LinearProgress from '@material-ui/core/LinearProgress';
 import Grid from '@material-ui/core/Grid';
-import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart';
 import Badge from '@material-ui/core/Badge';
+import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart';
 //styles//
 import { Wrapper, StyledButton } from './App.styles';
 //types//
@@ -35,9 +35,9 @@ const App = () => {
   );
   console.log(data);
 
-const getTotalItems = (items: CartItemType[]) => {
+const getTotalItems = (items: CartItemType[]) => 
   items.reduce((ack: number, item) => ack + item.amount, 0);
-}
+
 
 const handleAddToCart = (clickedItem: CartItemType) => null;
 
